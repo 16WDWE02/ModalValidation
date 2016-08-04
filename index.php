@@ -25,6 +25,14 @@
 			body{
 				padding-top: 50px;
 			}
+
+			.success{
+				color: #3c763d;
+			}
+
+			.error{
+				color:#a94442;
+			}
 		</style>
 	</head>
 	<body>
@@ -149,22 +157,25 @@
 		  <div class="form-group">
 		    <label for="exampleInputName">Name</label>
 		    <input type="name" class="form-control" id="exampleInputName" placeholder="Name">
-		    <span id="NameMessage"></span>
+		    <span id="NameMessage" class="messages"></span>
 		  </div>
 		  <div class="form-group">
 		    <label for="exampleInputEmail1">Email address</label>
 		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-		    <span id="EmailMessage"></span>
+		    <span id="EmailMessage" class="messages"></span>
 		  </div>
 		  <div class="form-group">
 		    <label for="exampleInputPassword1">Password</label>
 		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		    <span id="PasswordMessage" class="messages"></span>
 		  </div>
 		  <div class="form-group">
 		    <label for="ConfirmPassword1">Confirm Password</label>
 		    <input type="password" class="form-control" id="ConfirmPassword1" placeholder="Confirm Password">
+		    <span id="ConfirmPasswordmessage" class="messages"></span>
 		  </div>
 		  <button type="submit" id="loginButton" class="btn btn-default">Submit</button>
+		  <span id="FormMessage" class="messages error"></span>
 		</form>
 
       </div>
@@ -180,11 +191,5 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/validate.js"></script>
-
-		<script type="text/javascript">
-
-			console.log("test");
-
-		</script>
 	</body>
 </html>
