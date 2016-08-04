@@ -52,7 +52,7 @@ $( document ).ready(function() {
 		//Does not validate if email is already in the database
 
 		//Success
-		$("#EmailMessage").removeClass("remove").addClass("success").append("<p>Good to Go</p>");
+		$("#EmailMessage").removeClass("error").addClass("success").append("<p>Good to Go</p>");
 		ValidEmail = true;
 	});
 
